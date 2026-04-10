@@ -13,6 +13,7 @@ project:
     - title: Tutorials
       children:
         - file: tutorials/index.md
+        - file: tutorials/tutorial-walkthrough.ipynb
     - title: Advanced
       children:
         - file: advanced/index.md
