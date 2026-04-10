@@ -19,7 +19,7 @@ Don't worry about dependnies or I suppose even Python-- the contianer will handl
    code dseNpsDataPipelineNew
    ```
 
-2. VS Code _should_ (ping me if this doesn't work, I've had it be a teeny bit buggy) detect the `.devcontainer` folder and show a prompt: **"Reopen in Container"**. Click it! Sometimes vsCode isn't smart enought to prompt but you can always enen use `Cmd+Shift+P` and type `Dev Containers: Reopen in Container`.
+2. VS Code _should_ (ping me if this doesn't work, I've had it be a teeny bit buggy) detect the `.devcontainer` folder and show a prompt: **"Reopen in Container"**. Click it! Sometimes vsCode isn't smart enought to prompt but you can even use `Cmd+Shift+P` and type `Dev Containers: Reopen in Container`.
 
 3. It takes like 10 minutes the first itme you build it (building the conda environment with all the geospatial and climate packages). After that it's trivially quick.
 
