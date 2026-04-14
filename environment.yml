@@ -1,0 +1,31 @@
+name: py-env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - ipykernel
+  # Geospatial
+  - geopandas
+  - rioxarray
+  - shapely
+  - pyproj
+  # Core scientific
+  - numpy
+  - pandas
+  - xarray
+  - dask
+  - distributed
+  - matplotlib
+  # Cloud compute
+  - coiled
+  # Data I/O
+  - zarr
+  - s3fs
+  - fsspec
+  - fastparquet
+  # Utilities
+  - ipywidgets
+  - pip
+  - pip:
+    - climakitae @ https://github.com/cal-adapt/climakitae/archive/refs/tags/1.4.0.zip

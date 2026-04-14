@@ -4,6 +4,13 @@ project:
   subtitle: Python tools for pulling Cal-Adapt downscaled climate projections at national parks
   license:
     code: BSD-3-Clause
+  github: https://github.com/Androo1213/ScoobDSEclimatekitaeExt
+  jupyter:
+    binder:
+      repo: Androo1213/ScoobDSEclimatekitaeExt
+      ref: main
+      url: https://mybinder.org
+      provider: github
   toc:
     - file: index.md
     - title: Getting Started
