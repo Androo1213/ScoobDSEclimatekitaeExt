@@ -8,8 +8,8 @@ title: Links
 
 ## Data Sources
 
-- [Cal-Adapt Analytcs Engine](https://cal-adapt.org)
-- [LOCA2_ Downscaled Projections](https://loca.ucsd.edu)
+- [Cal-Adapt Analytics Engine](https://cal-adapt.org)
+- [LOCA2 Downscaled Projections](https://loca.ucsd.edu)
 
 ## Dependencies
 

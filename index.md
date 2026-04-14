@@ -1,17 +1,17 @@
 ---
 title: DSEclimatekitaeExt
-subtitle: Extension pipeline & accompying library to make pulling and plottind data from Cal-Adapt faster, easier and highkey more inuitive.
+subtitle: Extension pipeline & accompanying library to make pulling and plotting data from Cal-Adapt faster, easier and highkey more intuitive.
 ---
 
-Uses  Cal-Adapt's [climakitae](https://github.com/cal-adapt/climakitae), which does do a good job of abstracting a lot of the fetching, processiing, and visualize downscaled CMIP6 climate data for most of the western US (with best resolutions supported only for california and very adjacent spaces).
+Uses  Cal-Adapt's [climakitae](https://github.com/cal-adapt/climakitae), which does do a good job of abstracting a lot of the fetching, processing, and visualize downscaled CMIP6 climate data for most of the western US (with best resolutions supported only for california and very adjacent spaces).
 
 ## Features
 
 - **Distributed data fetching** — Sends work to [Coiled](https://coiled.io) cloud workers that sit next to the data on S3. Workers open Zarr stores, subset by time and space, convert units, and return results. You don't download raw data to your laptop.
 
-- **Powerful helper fucntions** - Instead of owning wokr across the whole stack, some helper functions only request that you know variables, time scales, sceiarioes and parks you'd like data from. 
+- **Powerful helper functions** - Instead of owning work across the whole stack, some helper functions only request that you know variables, time scales, scenarios and parks you'd like data from. 
 
-- **De(Myst)ification** - Actually don't even know what park you want? Or your wish of variable depends on what resolution and scenarios are avaliable? Helper functions send live probes into CalAdapts zarr stores to confidently tell you what's avaliable for where at resolution and over what time period. 
+- **De(Myst)ification** - Actually don't even know what park you want? Or your wish of variable depends on what resolution and scenarios are available? Helper functions send live probes into CalAdapts zarr stores to confidently tell you what's available for where at resolution and over what time period. 
 
 - **Fuzzy park search** — `ParkCatalog` searches across all 437 NPS units. Type "yosemite" or even "grand canion" and it finds the right park. No need to know exact names.
 
@@ -23,7 +23,7 @@ Uses  Cal-Adapt's [climakitae](https://github.com/cal-adapt/climakitae), which d
 
 ## Get Started
 
-Need Setup walkthrough? Easrist to jsut start with with the [installation guide](getting-started/installation.md) to get the container running, then open the Tutorial notebook.
+Need Setup walkthrough? Easiest to just start with with the [installation guide](getting-started/installation.md) to get the container running, then open the Tutorial notebook.
 
 - [Installation](getting-started/installation.md) — Set up Docker + VS Code
 - [Getting Started Overview](getting-started/index.md) — What to do first

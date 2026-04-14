@@ -21,6 +21,9 @@ project:
       children:
         - file: tutorials/index.md
         - file: tutorials/tutorial-walkthrough.ipynb
+        - file: tutorials/parkcatalog-demo.ipynb
+        - file: tutorials/full-data-extraction.ipynb
+        - file: tutorials/spatial-comparison.ipynb
     - title: Advanced
       children:
         - file: advanced/index.md
