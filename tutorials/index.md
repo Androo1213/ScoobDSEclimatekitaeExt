@@ -18,6 +18,10 @@ title: Tutorials
 
 [Spatial Comparison](spatial-comparison.ipynb) — 2x2 heatmaps comparing Historical vs SSP scenarios inside park boundaries, plus anomaly plots with a Historical reference panel
 
+## Demo Template — any park, any variable
+
+[Demo Template](demo-template.ipynb) — live-presentation harness. Three blanks to fill in on stage: a fuzzy search query, the exact park name you pick from the search, and a variable. Everything else is hardcoded (all 4 scenarios, monthly, 1995-2014 historical baseline, 2050-2069 future window). Runs `what_is_available()` live after you pick a park so the audience can see exactly what variables, timescales, and scenarios exist for it. Fetches time series + spatial snapshots in parallel on a small Coiled cluster and produces two plots: an annual-trajectory time series (ensemble spread + smoothing), and a 2×2 grid of three SSP anomaly maps with a Historical reference panel in the bottom-right. Validated locally for Yosemite × T_Max / T_Min / Precip.
+
 ## Flex — every California NPS unit, every main variable, all scenarios
 
 [Flex](flex.ipynb) — pure scale-and-speed showcase. Geometry-filter every NPS unit in California off the mega layer, drop micro-units, spin a 45-worker Coiled cluster (with a proper `wait_for_workers` warmup plus per-park retry), fetch monthly `T_Max` + `T_Min` + `Precip` 1950-2100 across all four scenarios for every park in parallel, concat + compute `T_Avg`, then compute three real climatological aggregates per (park × SSP): **ΔT_Avg (°C)**, **ΔPrecip (%)**, and **year of emergence** (Hawkins & Sutton-style — first year the 10-yr-smoothed MMEM annual T_Avg exceeds the historical ceiling). No plots; the point is the summary table fills in during a coffee break. Baseline: ~36 hours on a MacBook to fetch one variable for one park; this notebook does 15 parks × 3 variables.

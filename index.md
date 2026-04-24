@@ -35,6 +35,7 @@ Need Setup walkthrough? Easiest to just start with with the [installation guide]
 - [Full Data Extraction](tutorials/full-data-extraction.ipynb) — production multi-scenario fetch for two parks, with CSV export
 - [Spatial Comparison](tutorials/spatial-comparison.ipynb) — 2×2 heatmap grids + anomaly plots
 - [Flex: every CA NPS unit, every main variable, all scenarios](tutorials/flex.ipynb) — scale-and-speed showcase; 45 workers, 3 variables × 4 scenarios × 15 parks fetched in parallel, then reduced to real climate aggregates (ΔT, ΔPrecip, year of emergence)
+- [Demo Template: any park, any variable](tutorials/demo-template.ipynb) — live-demo harness with three blanks (fuzzy search → park name → variable); produces an annual time series and a 2×2 SSP-anomaly + Historical-reference grid for whatever the audience picks
 
 ## Library highlights
 
