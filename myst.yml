@@ -26,6 +26,8 @@ project:
         - file: tutorials/spatial-comparison.ipynb
         - file: tutorials/flex.ipynb
         - file: tutorials/demo-template.ipynb
+        - file: tutorials/feather-river-seasonal-precip.ipynb
+        - file: tutorials/two-trees-climate.ipynb
     - title: Advanced
       children:
         - file: advanced/index.md

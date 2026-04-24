@@ -36,6 +36,8 @@ Need Setup walkthrough? Easiest to just start with with the [installation guide]
 - [Spatial Comparison](tutorials/spatial-comparison.ipynb) — 2×2 heatmap grids + anomaly plots
 - [Flex: every CA NPS unit, every main variable, all scenarios](tutorials/flex.ipynb) — scale-and-speed showcase; 45 workers, 3 variables × 4 scenarios × 15 parks fetched in parallel, then reduced to real climate aggregates (ΔT, ΔPrecip, year of emergence)
 - [Demo Template: any park, any variable](tutorials/demo-template.ipynb) — live-demo harness with three blanks (fuzzy search → park name → variable); produces an annual time series and a 2×2 SSP-anomaly + Historical-reference grid for whatever the audience picks
+- [Feather River: seasonal precip](tutorials/feather-river-seasonal-precip.ipynb) — single-park user story at the watershed's upper end (Lassen Volcanic NP, via the library's geographic pivot from the missing "feather river" search); meteorological-DJF seasonal decomposition with model-agreement annotations
+- [Two Trees: Redwood vs Sequoia](tutorials/two-trees-climate.ipynb) — two-park contrast showing elevation-dependent warming (Sequoia warms ~0.5°C more than Redwood under every SSP); includes a documented ensemble-mismatch gotcha for multi-scenario precip anomaly tables
 
 ## Library highlights
 
