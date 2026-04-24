@@ -18,6 +18,6 @@ title: Tutorials
 
 [Spatial Comparison](spatial-comparison.ipynb) — 2x2 heatmaps comparing Historical vs SSP scenarios inside park boundaries, plus anomaly plots with a Historical reference panel
 
-## Flex — every California NPS unit, all temperature data
+## Flex — every California NPS unit, every main variable, all scenarios
 
-[Flex](flex.ipynb) — the whole stack composed in ~60 lines of actual code. Geometry-filters every NPS unit whose centroid sits inside a hand-crafted California polygon, drops micro-units too small for the 3 km LOCA2 grid, spins a 45-worker Coiled cluster, fetches monthly `T_Max` and `T_Min` across all 4 scenarios for 1950–2100 in parallel via a `ThreadPoolExecutor`, concatenates + computes `T_Avg`, and plots parks ranked by historical mean `T_Max`. End-to-end cloud wall-clock on the order of ~7 min vs ~hours-to-days on a laptop; full cost + timing diagnostics print at the end of the notebook.
+[Flex](flex.ipynb) — pure scale-and-speed showcase. Geometry-filter every NPS unit in California off the mega layer, drop micro-units, spin a 45-worker Coiled cluster (with a proper `wait_for_workers` warmup plus per-park retry), fetch monthly `T_Max` + `T_Min` + `Precip` 1950-2100 across all four scenarios for every park in parallel, concat + compute `T_Avg`, then compute three real climatological aggregates per (park × SSP): **ΔT_Avg (°C)**, **ΔPrecip (%)**, and **year of emergence** (Hawkins & Sutton-style — first year the 10-yr-smoothed MMEM annual T_Avg exceeds the historical ceiling). No plots; the point is the summary table fills in during a coffee break. Baseline: ~36 hours on a MacBook to fetch one variable for one park; this notebook does 15 parks × 3 variables.

@@ -85,4 +85,4 @@ The tutorials assume you're in the DSE lab's Coiled workspace. For a new team ad
 
 ### See it in action
 
-The [Flex notebook](../tutorials/flex.ipynb) is the most concise showcase of what the full stack buys you — it pulls monthly `T_Max` and `T_Min` for every NPS unit in California, all scenarios, 1950–2100, on a 45-worker cluster. About 60 lines of actual code end-to-end, all leaning on library helpers, and the notebook prints its own timing + data-volume diagnostics at the end.
+The [Flex notebook](../tutorials/flex.ipynb) is the most concise showcase of what the full stack buys you — pulls `T_Max`, `T_Min`, and `Precip` for every NPS unit in California across all scenarios on a 45-worker cluster, computes three real climatological aggregates per park × scenario, and prints its own throughput / speedup diagnostics at the end. Useful benchmark number: the same workflow against Cal-Adapt over home wifi takes ~36 hours for a single variable at a single park; this notebook does 15 parks × 3 variables in one coffee break.

@@ -34,7 +34,7 @@ Need Setup walkthrough? Easiest to just start with with the [installation guide]
 - [ParkCatalog Demo](tutorials/parkcatalog-demo.ipynb) — fuzzy search + `what_is_available()` live probing
 - [Full Data Extraction](tutorials/full-data-extraction.ipynb) — production multi-scenario fetch for two parks, with CSV export
 - [Spatial Comparison](tutorials/spatial-comparison.ipynb) — 2×2 heatmap grids + anomaly plots
-- [Flex: every CA NPS unit, all temperature data](tutorials/flex.ipynb) — the whole stack in ~60 lines, 45 workers, every NPS unit in California at once
+- [Flex: every CA NPS unit, every main variable, all scenarios](tutorials/flex.ipynb) — scale-and-speed showcase; 45 workers, 3 variables × 4 scenarios × 15 parks fetched in parallel, then reduced to real climate aggregates (ΔT, ΔPrecip, year of emergence)
 
 ## Library highlights
 
