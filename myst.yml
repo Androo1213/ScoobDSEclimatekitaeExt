@@ -24,6 +24,7 @@ project:
         - file: tutorials/parkcatalog-demo.ipynb
         - file: tutorials/full-data-extraction.ipynb
         - file: tutorials/spatial-comparison.ipynb
+        - file: tutorials/flex-all-ca-precip.ipynb
     - title: Advanced
       children:
         - file: advanced/index.md

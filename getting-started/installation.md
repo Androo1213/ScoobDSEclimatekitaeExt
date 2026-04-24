@@ -2,7 +2,7 @@
 title: Installation
 ---
 
-## Prereqs (strictly enforced :P)
+## Prerequisites
 
 Downloads wise, you just need docker and then the dev-containers VS Code Extension.
 
@@ -46,8 +46,9 @@ If you see errors, make sure you're inside the container and using the py-env ke
 
 ## Coiled Authentication
 
-Lib uses [Coiled](https://coiled.io) to run data fetches on cloud workers. You need a Coiled account (free tier available).
-Major TODO on this is that this only works with like people in the lab right now, need to probably make a tutorial on how to actually set up the coiled infra so other teams can have this for them, and also think of the best way for the tutorial notebook to work for like 'outside observers'
+The library uses [Coiled](https://coiled.io) to run data fetches on cloud workers. You need a Coiled account (free tier is enough to start).
+
+Tutorials in this site assume you're in the DSE lab's Coiled workspace. If you're adopting this stack for a new team, see [New Team Coiled Setup](../advanced/index.md#new-team-coiled-setup) for the full onboarding checklist (GCP project, quota bumps, region choice).
 
 In the VS Code terminal (inside the container):
 
