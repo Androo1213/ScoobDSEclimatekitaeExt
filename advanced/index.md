@@ -85,4 +85,4 @@ The tutorials assume you're in the DSE lab's Coiled workspace. For a new team ad
 
 ### See it in action
 
-The [Flex notebook](../tutorials/flex-all-ca-precip.ipynb) is the most concise showcase of what the full stack buys you — it pulls monthly precipitation for every NPS unit in California, all scenarios, 1950–2100, on a 45-worker cluster in ~7 minutes (vs. ~13 hours on a laptop). About 50 lines of actual code end-to-end, all leaning on library helpers.
+The [Flex notebook](../tutorials/flex.ipynb) is the most concise showcase of what the full stack buys you — it pulls monthly `T_Max` and `T_Min` for every NPS unit in California, all scenarios, 1950–2100, on a 45-worker cluster. About 60 lines of actual code end-to-end, all leaning on library helpers, and the notebook prints its own timing + data-volume diagnostics at the end.

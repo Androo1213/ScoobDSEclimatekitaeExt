@@ -18,6 +18,6 @@ title: Tutorials
 
 [Spatial Comparison](spatial-comparison.ipynb) — 2x2 heatmaps comparing Historical vs SSP scenarios inside park boundaries, plus anomaly plots with a Historical reference panel
 
-## Flex — All California Parks, All Precip
+## Flex — every California NPS unit, all temperature data
 
-[Flex: all CA parks, all precip](flex-all-ca-precip.ipynb) — the whole stack in ~50 lines: geometry-filter every NPS unit in California off the mega shapefile, probe each with `_inside_loca2`, spin a 45-worker cluster, fetch monthly Precip 1950–2100 across all 4 scenarios in parallel via a ThreadPoolExecutor, aggregate into one frame, plot parks ranked by historical annual precip. End-to-end cloud wall-clock ~7 min vs ~13 hours on a laptop; ~2 TB of LOCA2 chunks chomped through in the cloud
+[Flex](flex.ipynb) — the whole stack composed in ~60 lines of actual code. Geometry-filters every NPS unit whose centroid sits inside a hand-crafted California polygon, drops micro-units too small for the 3 km LOCA2 grid, spins a 45-worker Coiled cluster, fetches monthly `T_Max` and `T_Min` across all 4 scenarios for 1950–2100 in parallel via a `ThreadPoolExecutor`, concatenates + computes `T_Avg`, and plots parks ranked by historical mean `T_Max`. End-to-end cloud wall-clock on the order of ~7 min vs ~hours-to-days on a laptop; full cost + timing diagnostics print at the end of the notebook.

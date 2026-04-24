@@ -34,7 +34,7 @@ Need Setup walkthrough? Easiest to just start with with the [installation guide]
 - [ParkCatalog Demo](tutorials/parkcatalog-demo.ipynb) — fuzzy search + `what_is_available()` live probing
 - [Full Data Extraction](tutorials/full-data-extraction.ipynb) — production multi-scenario fetch for two parks, with CSV export
 - [Spatial Comparison](tutorials/spatial-comparison.ipynb) — 2×2 heatmap grids + anomaly plots
-- [Flex: all CA parks, all precip](tutorials/flex-all-ca-precip.ipynb) — the whole stack in ~50 lines, 45 workers, every NPS unit in California at once
+- [Flex: every CA NPS unit, all temperature data](tutorials/flex.ipynb) — the whole stack in ~60 lines, 45 workers, every NPS unit in California at once
 
 ## Library highlights
 
@@ -48,7 +48,7 @@ A few of the more interesting functions you'd reach for first. Full API in [`lib
 - **`annual_aggregate()`, `compute_anomalies()`, `smooth()`** — one-liners for the climatological ops that every study needs: monthly→annual with the right reducer per variable (sum for precip, mean for temp); absolute or percent anomaly vs a baseline; centered rolling mean to pull the forced signal out of interannual noise.
 - **`export_to_csv()`** — dumps `get_climate_data` results to R-friendly CSVs with consistent column names and types.
 
-The [Flex notebook](tutorials/flex-all-ca-precip.ipynb) is the most compact place to see most of these composed together.
+The [Flex notebook](tutorials/flex.ipynb) is the most compact place to see most of these composed together.
 
 ## Getting Started with External Data
 
@@ -72,7 +72,7 @@ dseNpsDataPipelineNew/
 │       ├── ParkCatalog_Demo.ipynb
 │       ├── Full_Data_Extraction.ipynb
 │       ├── Spatial_Comparison.ipynb
-│       └── Flex_All_CA_Precip.ipynb
+│       └── Flex.ipynb
 ├── USA_National_Park_Service_Lands_*/   # mega NPS shapefile (437 units)
 ├── data/csv/                            # output CSVs from runs
 ├── docker/                              # container setup
